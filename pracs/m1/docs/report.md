@@ -9,22 +9,22 @@
 ## Аналитические тесты и выкладки
 Два аналитических случая:
 
-1. **Без сопротивления воздуха**      
-    $$
-    \begin{cases}
-      x(t) = v_0 \cos\alpha \times t \\
-      y(t) = v_0 \sin\alpha \times t - \frac{g}{2} \times t^2
-    \end{cases}
-    $$
+### 1. Без сопротивления воздуха 
+$$
+\begin{cases}
+  x(t) = v_0 \cos\alpha \times t \\
+  y(t) = v_0 \sin\alpha \times t - \frac{g}{2} \times t^2
+\end{cases}
+$$
 
-2. **Линейное сопротивление ($F \sim v$)**  
-    $$
-    \begin{cases}
-      x(t) = \frac{m}{k} v_0 \cos\alpha \left( 1 - e^{-\frac{k}{m}t} \right) \\
-      y(t) = \frac{m}{k} \left( v_0 \sin\alpha + \frac{m}{k} g \right) \left( 1 - e^{-\frac{k}{m}t} \right) - \frac{m}{k} g t
-    \end{cases}
-    $$
-  
+### 2. Линейное сопротивление ($F \sim v$)
+$$
+\begin{cases}
+  x(t) = \frac{m}{k} v_0 \cos\alpha \left( 1 - e^{-\frac{k}{m}t} \right) \\
+  y(t) = \frac{m}{k} \left( v_0 \sin\alpha + \frac{m}{k} g \right) \left( 1 - e^{-\frac{k}{m}t} \right) - \frac{m}{k} g t
+\end{cases}
+$$
+
   
 ## Результаты численных экспериментов
 Проверка ожидаемых физических зависимостей (базовые параметры: $v_0 = 42$ м/с, $\alpha = 45^\circ$, $m = 1$ кг, $k_{лин} = 0.1$ 1/с, $k_{кв} = 0.01$ 1/м).
